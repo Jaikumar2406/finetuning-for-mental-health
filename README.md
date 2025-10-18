@@ -45,7 +45,9 @@ python train.py \
     --output_dir results_adapter \
     --num_train_epochs 3 \
     --per_device_train_batch_size 2
-##🤖 Inference
+
+    
+## 🤖 Inference ##
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 
 model_path = "results_adapter"
@@ -66,19 +68,9 @@ print(response[0]['generated_text'])
 
 
 ## ⚠️ Safety & Disclaimer
--This model is not a substitute for professional mental health advice.
--Use this model responsibly and ethically.
--For any severe mental health issues, consult a licensed therapist or professional.
+- This model is not a substitute for professional mental health advice.
+- Use this model responsibly and ethically.
+- For any severe mental health issues, consult a licensed therapist or professional.
 
-##📂 Repository Structure
-finetuning-for-mental-health/
-│
-├── results_adapter/          # Fine-tuned LoRA adapter weights
-├── train.py                  # Fine-tuning script
-├── inference.py              # Example inference script
-├── requirements.txt          # Python dependencies
-├── dataset/                  # Optional: mental health dataset
-├── README.md                 # This file
-└── LICENSE
 <img width="1855" height="735" alt="Screenshot 2025-10-19 011757" src="https://github.com/user-attachments/assets/fc57706d-0446-42a9-a33f-016068ef0f99" />
 
